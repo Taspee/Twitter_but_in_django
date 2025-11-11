@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Home</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Twitter</h1>
+    </header>
+    <main>
+        <section class="tweet-input">
+            <textarea placeholder="What's happening?" rows="4" cols="50"></textarea>
+            <button type="button">Tweet</button>
+        </section>
+        <section class="tweets-feed">
+            <h2>Tweets</h2>
+            <!-- Tweets will be dynamically loaded here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Twitter, Inc.</p>
+    </footer>
+</body>
+</html>
